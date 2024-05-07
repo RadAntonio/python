@@ -1,7 +1,11 @@
 from art import logo
 
-alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+            'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
+            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 print(logo)
+
+
 def ceaser(start_text, shift_amount, cipher_direction):
     end_text = ""
     if cipher_direction == 'decode':
@@ -15,6 +19,7 @@ def ceaser(start_text, shift_amount, cipher_direction):
             end_text += char
     print(f"The {cipher_direction}d text is {end_text}")
 
+
 should_continue = True
 
 while should_continue:
@@ -26,9 +31,3 @@ while should_continue:
     result = input("Do you want to try again?(y/n)\n").lower()
     if result == 'n':
         should_continue = False
-
-
-
-
-
-
